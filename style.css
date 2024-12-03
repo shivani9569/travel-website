@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100%;
+    /* background: #fff; */
+    height: 50px;
+    display: flex;
+    margin-right: 0px;
+}
+
+
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Dongle-bpld";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+
+.bo {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+
+.container{
+flex-wrap: wrap;
+}
+
+body {
+    background-image: url(b4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
+
+.Logo img {
+    max-width: 15%;
+}
+
+.nav-menu ul {
+    display: flex;
+    text-align: right;
+    margin-left: 530px;
+    /* margin-bottom:100%; */
+    margin-top: 10px;
+
+}
+
+.nav-menu li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* color: rgb(237, 247, 248) (0, 0, 0); */
+    color: black;
+    transition: all ease 0.3s;
+    font-weight: bolder;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+.nav-menu a:hover {
+    color: rgb(222, 7, 7);
+}
+
+.nav-menu {
+    color: black;
+}
+
+.about h3 {
+    text-align: center;
+    height: 600px;
+}
+
+.about h3 {
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+}
+
+.about p {
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.hero {
+    justify-items: center;
+    margin-top: 200px;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    height: 500px;
+}
+
+.hero:hover {
+    color: #fff;
+}
+
+.hero-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f01f48;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.hero-button:hover {
+    color: black;
+}
+
+.hero-button:hover {
+    background: color #333;
+}
+
+.destinations {
+    /* font-size: 2.4rem; */
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
+}
+
+.destinations h2{
+margin-bottom: 40px;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.destinations h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 5px 5px 10px gray;
+}
+.destination-item{
+    text-align: left;
+}
+
+.destination-item h3{
+    font: size 2rem; 
+}
+
+.destination-item p{
+    font: size 1.4rem; 
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+
+
+@media (max-width: 480px) {
+    .nav-menu ul {
+        flex-direction: column; 
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .hero {
+        font-size: 2rem; 
+        margin-top: 100px; 
+    }
+
+    .hero-button {
+        padding: 5px 20px; 
+    }
+    /* .destination {
+        margin-top: 50px;
+    } */
+
+    .destinations h2 {
+        font-size: 2rem;
+        margin-top: 15px; 
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr; 
+        grid-gap: 15px; 
+    }
+
+    .destination-item img {
+        height: 200px; 
+    }
+
+    .destination-item h3 {
+        font-size: 1.6rem; 
+    }
+
+    .destination-item p {
+        font-size: 1.1rem; 
+    }
+}
